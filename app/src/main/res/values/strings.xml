@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">PlantVit</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="how">
+        ✔️Turn your Android phone into a mobile crop doctor.\n
+
+        ✔️With just one photo, PlantVitality diagnoses infected crops and affects treatments for only disease.\n
+
+        ✔️Benefit from agricultural experts know-how or help fellow farmers with your knowledge.
+    </string>
+
+    <string name="instruct">
+        1.First import or capture an image\n
+        2.When it loads into the ImageView,
+          you are ready to detect the disease.
+    </string>
+
+    <string-array name="classes">
+        <item>Apple scab</item>
+        <item>Apple Black rot</item>
+        <item>Apple Cedar apple rust</item>
+        <item>Apple healthy</item>
+        <item>Blueberry healthy</item>
+        <item>healthy Cherry</item>
+        <item>Cherry Powdery_mildew</item>
+        <item>Corn (maize) Cercospora leaf spot Gray leaf spot</item>
+        <item>Corn (maize) Common rust</item>
+        <item>Corn (maize) healthy</item>
+        <item>Corn (maize) Northern Leaf Blight</item>
+        <item>Grape Black rot</item>
+        <item>Grape Esca (Black Measles)</item>
+        <item>healthy Grape</item>
+        <item>Grape Leaf blight(Isariopsis Leaf Spot)</item>
+        <item>Orange Haunglongbing (Citrus greening)</item>
+        <item>Peach Bacterial spot</item>
+        <item>healthy Peach</item>
+        <item>Pepper,bell Bacterial spot</item>
+        <item>Pepper,bell healthy</item>
+        <item>Potato Early blight</item>
+        <item>healthy Potato</item>
+        <item>Potato Late blight</item>
+        <item>healthy Raspberry</item>
+        <item>healthy Soybean</item>
+        <item>Squash Powdery mildew</item>
+    </string-array>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+    </string-array>
+
+    <string name="spot">Soap-Shield Flowable Liquid Copper Fungicide1
+Dithane or other copper fungicides2
+Bonide Fung-onil Concentrate or other fungicides containing chlorothalonil</string>
+</resources>
