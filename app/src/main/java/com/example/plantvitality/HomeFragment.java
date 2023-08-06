@@ -30,7 +30,7 @@ import android.widget.Toast;
 
 import com.airbnb.lottie.Lottie;
 import com.airbnb.lottie.LottieAnimationView;
-import com.example.plantvitality.ml.FinalModel;
+import com.example.plantvitality.ml.ModelOpt;
 
 import org.tensorflow.lite.DataType;
 import org.tensorflow.lite.support.image.TensorImage;
@@ -174,13 +174,16 @@ TextView result,about;
                     leafImg.setImageBitmap(bitmap);
                    // classifyImage(bitmap);
 
-                    img = Bitmap.createScaledBitmap(bitmap,224,224,true);
+
+                    // classifyImage(bitmap);
+                    img = Bitmap.createScaledBitmap(bitmap,200,200,true);
 
                     try {
-                        FinalModel model = FinalModel.newInstance(getContext());
+                        //FinalModel model = FinalModel.newInstance(getContext());
+                        ModelOpt model = ModelOpt.newInstance(getContext());
 
                         // Creates inputs for reference.
-                        TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 224, 224, 3}, DataType.FLOAT32);
+                        TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 200, 200, 3}, DataType.FLOAT32);
 
                         TensorImage tensorImage = new TensorImage(DataType.FLOAT32);
                         tensorImage.load(img);
@@ -189,7 +192,8 @@ TextView result,about;
                         inputFeature0.loadBuffer(byteBuffer);
 
                         // Runs model inference and gets result.
-                        FinalModel.Outputs outputs = model.process(inputFeature0);
+                        //FinalModel.Outputs outputs = model.process(inputFeature0);
+                        ModelOpt.Outputs outputs = model.process(inputFeature0);
                         TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
 
                         float[] confidence = outputFeature0.getFloatArray();
@@ -197,8 +201,8 @@ TextView result,about;
                         // Releases model resources if no longer used.
                         model.close();
 
-                        String[] classess = { "Tomato_Bacterial_spot", "Tomato_Early_blight", "Tomato_Late_blight", "Tomato_Leaf_Mold", "Tomato_Septoria_leaf_spot", "Tomato_Spider_mites Two-spotted_spider_mite", "Tomato_Target_Spot", "Tomato_Yellow_Leaf_Curl_Virus", "Tomato_mosaic_virus", "Tomato_healthy"};
-
+                        //String[] classess = { "Tomato_Bacterial_spot", "Tomato_Early_blight", "Tomato_Late_blight", "Tomato_Leaf_Mold", "Tomato_Septoria_leaf_spot", "Tomato_Spider_mites Two-spotted_spider_mite", "Tomato_Target_Spot", "Tomato_Yellow_Leaf_Curl_Virus", "Tomato_mosaic_virus", "Tomato_healthy"};
+                        String[] classess = getResources().getStringArray(R.array.classes);
                         int maxPos=0;
                         float maxConfidence=0;
                         for(int i=0;i<confidence.length;i++){
@@ -208,7 +212,7 @@ TextView result,about;
                             }
                         }
 
-                        //result.setText(outputFeature0.getFloatArray()[0] + "\n"+outputFeature0.getFloatArray()[1]+"\n"+outputFeature0.getFloatArray()[2] + "\n"+outputFeature0.getFloatArray()[3] + "\n"+outputFeature0.getFloatArray()[4] + "\n"+outputFeature0.getFloatArray()[5] + "\n"+outputFeature0.getFloatArray()[6] + "\n"+outputFeature0.getFloatArray()[7] + "\n"+outputFeature0.getFloatArray()[8] + "\n"+outputFeature0.getFloatArray()[9] + "\n"+classess[maxPos]);
+                        // result.setText(outputFeature0.getFloatArray()[0] + "\n"+outputFeature0.getFloatArray()[1]+"\n"+outputFeature0.getFloatArray()[2] + "\n"+outputFeature0.getFloatArray()[3] + "\n"+outputFeature0.getFloatArray()[4] + "\n"+outputFeature0.getFloatArray()[5] + "\n"+outputFeature0.getFloatArray()[6] + "\n"+outputFeature0.getFloatArray()[7] + "\n"+outputFeature0.getFloatArray()[8] + "\n"+outputFeature0.getFloatArray()[9] + "\n"+classess[maxPos]);
                         result.setText(classess[maxPos]);
                         result.setOnClickListener(new View.OnClickListener() {
                             @Override
@@ -241,13 +245,14 @@ TextView result,about;
                     leafImg.setImageBitmap(bitmap);
 
                    // classifyImage(bitmap);
-                    img = Bitmap.createScaledBitmap(bitmap,224,224,true);
+                    img = Bitmap.createScaledBitmap(bitmap,200,200,true);
 
                     try {
-                        FinalModel model = FinalModel.newInstance(getContext());
+                        //FinalModel model = FinalModel.newInstance(getContext());
+                        ModelOpt model = ModelOpt.newInstance(getContext());
 
                         // Creates inputs for reference.
-                        TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 224, 224, 3}, DataType.FLOAT32);
+                        TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 200, 200, 3}, DataType.FLOAT32);
 
                         TensorImage tensorImage = new TensorImage(DataType.FLOAT32);
                         tensorImage.load(img);
@@ -256,7 +261,8 @@ TextView result,about;
                         inputFeature0.loadBuffer(byteBuffer);
 
                         // Runs model inference and gets result.
-                        FinalModel.Outputs outputs = model.process(inputFeature0);
+                        //FinalModel.Outputs outputs = model.process(inputFeature0);
+                        ModelOpt.Outputs outputs = model.process(inputFeature0);
                         TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
 
                         float[] confidence = outputFeature0.getFloatArray();
@@ -264,8 +270,8 @@ TextView result,about;
                         // Releases model resources if no longer used.
                         model.close();
 
-                        String[] classess = { "Tomato_Bacterial_spot", "Tomato_Early_blight", "Tomato_Late_blight", "Tomato_Leaf_Mold", "Tomato_Septoria_leaf_spot", "Tomato_Spider_mites Two-spotted_spider_mite", "Tomato_Target_Spot", "Tomato_Yellow_Leaf_Curl_Virus", "Tomato_mosaic_virus", "Tomato_healthy"};
-
+                        //String[] classess = { "Tomato_Bacterial_spot", "Tomato_Early_blight", "Tomato_Late_blight", "Tomato_Leaf_Mold", "Tomato_Septoria_leaf_spot", "Tomato_Spider_mites Two-spotted_spider_mite", "Tomato_Target_Spot", "Tomato_Yellow_Leaf_Curl_Virus", "Tomato_mosaic_virus", "Tomato_healthy"};
+                        String[] classess = getResources().getStringArray(R.array.classes);
                         int maxPos=0;
                         float maxConfidence=0;
                         for(int i=0;i<confidence.length;i++){
@@ -297,7 +303,7 @@ TextView result,about;
         try{
             //DiseaseDetection model = DiseaseDetection.newInstance(getActivity().getApplicationContext());
             //TfLiteModel model = TfLiteModel.newInstance(getActivity().getApplicationContext());
-            FinalModel model = FinalModel.newInstance(getContext().getApplicationContext());
+            ModelOpt model = ModelOpt.newInstance(getContext().getApplicationContext());
 
             TensorBuffer inputFeature0=TensorBuffer.createFixedSize(new int[]{1,224,224,3}, DataType.FLOAT32);
             ByteBuffer byteBuffer=ByteBuffer.allocateDirect(4*imageSize*imageSize*3);
@@ -319,7 +325,7 @@ TextView result,about;
             inputFeature0.loadBuffer(byteBuffer);
 
 
-            FinalModel.Outputs outputs = model.process(inputFeature0);
+            ModelOpt.Outputs outputs = model.process(inputFeature0);
             //run model interface and get results
            // TfLiteModel.Outputs outputs = model.process(inputFeature0);
             TensorBuffer outputFeatures0=outputs.getOutputFeature0AsTensorBuffer();

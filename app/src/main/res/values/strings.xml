@@ -19,32 +19,113 @@
     </string>
 
     <string-array name="classes">
-        <item>Apple scab</item>
-        <item>Apple Black rot</item>
-        <item>Apple Cedar apple rust</item>
-        <item>Apple healthy</item>
-        <item>Blueberry healthy</item>
-        <item>healthy Cherry</item>
-        <item>Cherry Powdery_mildew</item>
-        <item>Corn (maize) Cercospora leaf spot Gray leaf spot</item>
-        <item>Corn (maize) Common rust</item>
-        <item>Corn (maize) healthy</item>
-        <item>Corn (maize) Northern Leaf Blight</item>
-        <item>Grape Black rot</item>
-        <item>Grape Esca (Black Measles)</item>
-        <item>healthy Grape</item>
-        <item>Grape Leaf blight(Isariopsis Leaf Spot)</item>
-        <item>Orange Haunglongbing (Citrus greening)</item>
-        <item>Peach Bacterial spot</item>
-        <item>healthy Peach</item>
-        <item>Pepper,bell Bacterial spot</item>
-        <item>Pepper,bell healthy</item>
-        <item>Potato Early blight</item>
-        <item>healthy Potato</item>
-        <item>Potato Late blight</item>
-        <item>healthy Raspberry</item>
-        <item>healthy Soybean</item>
-        <item>Squash Powdery mildew</item>
+<!--        <item>Apple scab</item>-->
+<!--        <item>Apple Black rot</item>-->
+<!--        <item>Apple Cedar apple rust</item>-->
+<!--        <item>Apple healthy</item>-->
+<!--        <item>Blueberry healthy</item>-->
+<!--        <item>healthy Cherry</item>-->
+<!--        <item>Cherry Powdery_mildew</item>-->
+<!--        <item>Corn (maize) Cercospora leaf spot Gray leaf spot</item>-->
+<!--        <item>Corn (maize) Common rust</item>-->
+<!--        <item>Corn (maize) healthy</item>-->
+<!--        <item>Corn (maize) Northern Leaf Blight</item>-->
+<!--        <item>Grape Black rot</item>-->
+<!--        <item>Grape Esca (Black Measles)</item>-->
+<!--        <item>healthy Grape</item>-->
+<!--        <item>Grape Leaf blight(Isariopsis Leaf Spot)</item>-->
+<!--        <item>Orange Haunglongbing (Citrus greening)</item>-->
+<!--        <item>Peach Bacterial spot</item>-->
+<!--        <item>healthy Peach</item>-->
+<!--        <item>Pepper,bell Bacterial spot</item>-->
+<!--        <item>Pepper,bell healthy</item>-->
+<!--        <item>Potato Early blight</item>-->
+<!--        <item>healthy Potato</item>-->
+<!--        <item>Potato Late blight</item>-->
+<!--        <item>healthy Raspberry</item>-->
+<!--        <item>healthy Soybean</item>-->
+<!--        <item>Squash Powdery mildew</item>-->
+<!--        -->
+        <item>apple scab</item>
+
+        <item>apple black rot</item>
+
+        <item>apple cedar</item>
+
+        <item>apple rust</item>
+
+        <item>apple healthy</item>
+
+        <item>blueberry healthy</item>
+
+        <item>cherry including sour powdery mildew</item>
+
+        <item>cherry including sour healthy</item>
+
+        <item>corn maize cercospora leaf spot gray leaf spot</item>
+
+        <item>corn maize common rust</item>
+
+        <item>corn maize northern leaf blight</item>
+
+        <item>corn maize healthy</item>
+
+        <item>grape black rot</item>
+
+        <item>grape esca black measles</item>
+
+        <item>grape leaf blight isariopsis leaf spot</item>
+
+        <item>grape healthy</item>
+
+        <item>orange haunglongbing citrus greening</item>
+
+        <item>peach bacterial spot</item>
+
+        <item>peach healthy</item>
+
+        <item>pepper bell bacterial spot</item>
+
+        <item>pepper bell healthy</item>
+
+        <item>potato early blight</item>
+
+        <item>potato late blight</item>
+
+        <item>potato healthy</item>
+
+        <item>raspberry healthy</item>
+
+        <item>soybean healthy</item>
+
+        <item>squash powdery mildew</item>
+
+        <item>strawberry leaf scorch</item>
+
+        <item>strawberry healthy</item>
+
+        <item>tomato bacterial spot</item>
+
+        <item>tomato early blight</item>
+
+        <item>tomato late blight</item>
+
+        <item>tomato leaf mold</item>
+
+        <item>tomato septoria leaf spot</item>
+
+        <item>tomato spider mites two spotted spider mite</item>
+
+        <item>tomato target spot</item>
+
+        <item>tomato yellow leaf curl virus</item>
+
+        <item>tomato mosaic virus</item>
+
+        <item>tomato healthy</item>
+
+        <item>background</item>
+
     </string-array>
 
     <string-array name="planets_array">

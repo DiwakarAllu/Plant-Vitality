@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void showBottomDialog() {
 
-        final Dialog dialog = new Dialog(this);
+        final Dialog dialog = new Dialog(MainActivity.this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.bottomsheetlayout);
 
