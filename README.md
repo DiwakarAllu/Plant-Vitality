@@ -1,7 +1,7 @@
 ## Project Title: 
 Plant Disease Prediction and Fertilizer Recommendation System using Android 
-and Machine Learning. - Plant-Vitality 🌱
-
+and Machine Learning. - [Plant-Vitality](https://github.com/DiwakarAllu/Plant-Vitality/releases/download/v0.1.0/app-debug.apk)
+ 🌱
 ## Description:
 The objective of this project is to develop an Android application that can 
 accurately predict plant diseases based on user-submitted images and provide 
