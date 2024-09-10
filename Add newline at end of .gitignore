@@ -1,0 +1,8 @@
+[1mdiff --git a/app/.gitignore b/app/.gitignore[m
+[1mindex 42afabf..796b96d 100644[m
+[1m--- a/app/.gitignore[m
+[1m+++ b/app/.gitignore[m
+[36m@@ -1 +1 @@[m
+[31m-/build[m
+\ No newline at end of file[m
+[32m+[m[32m/build[m
