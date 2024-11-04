@@ -22,6 +22,8 @@ along with care tips and recommendations. The app also features an integrated ch
 - SVM and InceptionV3 Algorithms
 - TensorFlow (ML framework)
 - BrainShop API (backend service for chatbot)
+##
+![Demo GIF](Plant_Vitality.gif)
 
 ## References:
 - Gimnath Perera. (2021, February 20). 
